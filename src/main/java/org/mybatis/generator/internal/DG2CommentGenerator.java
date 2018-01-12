@@ -22,10 +22,10 @@ public class DG2CommentGenerator extends DefaultCommentGenerator {
     public void addClassComment(InnerClass innerClass, IntrospectedTable introspectedTable) {
 
         StringBuffer sb = new StringBuffer();
-        sb.append("@ApiModel(value=\"").append(introspectedTable.getFullyQualifiedTable().getRemark()).append
-                ("\",description=\"数据库表：").append
-                (introspectedTable.getFullyQualifiedTable()).append
-                ("\")");
+//        sb.append("@ApiModel(value=\"").append(introspectedTable.getFullyQualifiedTable().getRemark()).append
+//                ("\",description=\"数据库表：").append
+//                (introspectedTable.getFullyQualifiedTable()).append
+//                ("\")");
         //添加通用mapper注释 @Table(name = "数据库表名")
         sb.append("@Table(name = \"" + introspectedTable.getFullyQualifiedTable() + "\")");
         innerClass.addJavaDocLine(sb.toString());
@@ -50,17 +50,17 @@ public class DG2CommentGenerator extends DefaultCommentGenerator {
 
         StringBuffer sb = new StringBuffer();
 
-        if (introspectedColumn.getRemarks() != null) {
+       /* if (introspectedColumn.getRemarks() != null) {
             sb.append("@ApiModelProperty(value=\"").append(introspectedColumn.getRemarks()).append("\",name=\"").append(introspectedColumn.getJavaProperty());
-        }
+        }*/
 
-        if (!(introspectedColumn.isNullable())) {
+        /*if (!(introspectedColumn.isNullable())) {
             sb.append("\", required=true)");
             field.addJavaDocLine(sb.toString());
         } else {
             sb.append("\")");
             field.addJavaDocLine(sb.toString());
-        }
+        }*/
 
         if (!(introspectedColumn.isNullable())) {
             field.addAnnotation("@NotEmpty");
