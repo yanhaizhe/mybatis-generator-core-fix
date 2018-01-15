@@ -21,9 +21,9 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/myclouder_upms?useUnicode=true&amp;characterEncoding=utf-8"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/jiddpb?useUnicode=true&amp;characterEncoding=utf-8"
                         userId="root"
-                        password="yanhz123">
+                        password="anywhere">
         </jdbcConnection>
 
 
