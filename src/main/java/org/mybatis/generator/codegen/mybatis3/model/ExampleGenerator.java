@@ -62,6 +62,15 @@ public class ExampleGenerator extends AbstractJavaGenerator {
         topLevelClass.setVisibility(JavaVisibility.PUBLIC);
         commentGenerator.addJavaFileComment(topLevelClass);
 
+        FullyQualifiedJavaType fullyQualifiedJavaTypeTable = new FullyQualifiedJavaType("javax.persistence.Table");
+//        FullyQualifiedJavaType fullyQualifiedJavaTypeNotEmpty = new FullyQualifiedJavaType("org.hibernate.validator.constraints.NotEmpty");
+//        FullyQualifiedJavaType fullyQualifiedJavaTypeColumn = new FullyQualifiedJavaType("javax.persistence.Column");
+//        FullyQualifiedJavaType fullyQualifiedJavaTypeId = new FullyQualifiedJavaType("javax.persistence.Id");
+        topLevelClass.addImportedType(fullyQualifiedJavaTypeTable);
+//        topLevelClass.addImportedType(fullyQualifiedJavaTypeNotEmpty);
+//        topLevelClass.addImportedType(fullyQualifiedJavaTypeColumn);
+//        topLevelClass.addImportedType(fullyQualifiedJavaTypeId);
+
         // add default constructor
         Method method = new Method();
         method.setVisibility(JavaVisibility.PUBLIC);

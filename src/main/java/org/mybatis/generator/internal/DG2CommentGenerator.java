@@ -1,5 +1,6 @@
 package org.mybatis.generator.internal;
 
+import org.mybatis.generator.api.CommentGenerator;
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.dom.java.*;
@@ -26,6 +27,7 @@ public class DG2CommentGenerator extends DefaultCommentGenerator {
 //                ("\",description=\"数据库表：").append
 //                (introspectedTable.getFullyQualifiedTable()).append
 //                ("\")");
+//        sb.append("@Data");
         //添加通用mapper注释 @Table(name = "数据库表名")
         sb.append("@Table(name = \"" + introspectedTable.getFullyQualifiedTable() + "\")");
         innerClass.addJavaDocLine(sb.toString());

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <classPathEntry location="D:/develops/repo/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar"/>
+    <classPathEntry location="/Users/yanhaizhe/.m2/repository/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar"/>
 
     <context id="config" targetRuntime="MyBatis3">
         <!--<commentGenerator>
@@ -21,7 +21,7 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/jiddpb?useUnicode=true&amp;characterEncoding=utf-8"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/asgard?useUnicode=true&amp;characterEncoding=utf-8"
                         userId="root"
                         password="anywhere">
         </jdbcConnection>
@@ -32,24 +32,33 @@
         </javaTypeResolver>
 
         <!-- model class config -->
-        <javaModelGenerator targetPackage="com.myclouder.upms.dal.model"
-                            targetProject="myclouder-upms/myclouder-upms-rpc-dal/src/main/java">
+        <javaModelGenerator targetPackage="io.terminus.asgard.asgardcore.model"
+                            targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-core/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="mybatis.mapping"
-                         targetProject="myclouder-upms/myclouder-upms-rpc-dal/src/main/resources">
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-core/src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.myclouder.upms.dal.mapper"
-                             targetProject="myclouder-upms/myclouder-upms-rpc-dal/src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="io.terminus.asgard.asgardcore.mapper"
+                             targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-core/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="upms_log">
+
+
+        <table tableName="supplier_account">
             <!--<generatedKey column="id" sqlStatement="mysql" identity="true"/>-->
+            <!--<ignoreColumn column="created_by"></ignoreColumn>-->
+            <!--<ignoreColumn column="last_updated_by"></ignoreColumn>-->
+            <!--<ignoreColumn column="created_at"></ignoreColumn>-->
+            <!--<ignoreColumn column="last_updated_at"></ignoreColumn>-->
+            <!--<ignoreColumn column="extra_json"></ignoreColumn>-->
+            <!--<ignoreColumn column="options"></ignoreColumn>-->
+            <!--<ignoreColumn column="is_deleted"></ignoreColumn>-->
         </table>
     </context>
 </generatorConfiguration>
