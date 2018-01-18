@@ -63,10 +63,12 @@ public class ExampleGenerator extends AbstractJavaGenerator {
         commentGenerator.addJavaFileComment(topLevelClass);
 
         FullyQualifiedJavaType fullyQualifiedJavaTypeTable = new FullyQualifiedJavaType("javax.persistence.Table");
-//        FullyQualifiedJavaType fullyQualifiedJavaTypeNotEmpty = new FullyQualifiedJavaType("org.hibernate.validator.constraints.NotEmpty");
+        FullyQualifiedJavaType fullyQualifiedJavaTypeAPIModel = new FullyQualifiedJavaType("io.swagger.annotations.ApiModel");
+        //        FullyQualifiedJavaType fullyQualifiedJavaTypeNotEmpty = new FullyQualifiedJavaType("org.hibernate.validator.constraints.NotEmpty");
 //        FullyQualifiedJavaType fullyQualifiedJavaTypeColumn = new FullyQualifiedJavaType("javax.persistence.Column");
 //        FullyQualifiedJavaType fullyQualifiedJavaTypeId = new FullyQualifiedJavaType("javax.persistence.Id");
         topLevelClass.addImportedType(fullyQualifiedJavaTypeTable);
+        topLevelClass.addImportedType(fullyQualifiedJavaTypeAPIModel);
 //        topLevelClass.addImportedType(fullyQualifiedJavaTypeNotEmpty);
 //        topLevelClass.addImportedType(fullyQualifiedJavaTypeColumn);
 //        topLevelClass.addImportedType(fullyQualifiedJavaTypeId);

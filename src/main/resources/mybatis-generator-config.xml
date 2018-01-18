@@ -32,25 +32,25 @@
         </javaTypeResolver>
 
         <!-- model class config -->
-        <javaModelGenerator targetPackage="io.terminus.asgard.asgardcore.model"
-                            targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-core/src/main/java">
+        <javaModelGenerator targetPackage="io.terminus.asgard.asgardapi.model"
+                            targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-api/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="mapper"
-                         targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-core/src/main/resources">
+                         targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-service/src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="io.terminus.asgard.asgardcore.mapper"
-                             targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-core/src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="io.terminus.asgard.asgardservice.mapper"
+                             targetProject="/Users/yanhaizhe/workspace/terminus/asgard/asgard-service/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
 
 
-        <table tableName="supplier_account">
+        <table tableName="purchaser_account">
             <!--<generatedKey column="id" sqlStatement="mysql" identity="true"/>-->
             <!--<ignoreColumn column="created_by"></ignoreColumn>-->
             <!--<ignoreColumn column="last_updated_by"></ignoreColumn>-->
@@ -59,6 +59,50 @@
             <!--<ignoreColumn column="extra_json"></ignoreColumn>-->
             <!--<ignoreColumn column="options"></ignoreColumn>-->
             <!--<ignoreColumn column="is_deleted"></ignoreColumn>-->
+        </table>
+        <table tableName="purchaser_basic_info">
+        </table>
+        <table tableName="purchaser_company_info">
+        </table>
+        <table tableName="purchaser_company_tax_info">
+        </table>
+        <table tableName="purchaser_info_component">
+        </table>
+        <table tableName="purchaser_interested_info_component">
+        </table>
+        <table tableName="purchaser_rate_template">
+        </table>
+        <table tableName="purchaser_rate_template_module">
+        </table>
+        <table tableName="purchaser_supplier_basic_info">
+        </table>
+        <table tableName="purchaser_supplier_investigate_result">
+        </table>
+        <table tableName="purchaser_supplier_rate_template_result">
+        </table>
+        <table tableName="purchaser_supplier_tag">
+        </table>
+        <table tableName="purchaser_tag_setting">
+        </table>
+        <table tableName="supplier_account">
+        </table>
+        <table tableName="supplier_bank_info">
+        </table>
+        <table tableName="supplier_basic_info">
+        </table>
+        <table tableName="supplier_company_info">
+        </table>
+        <table tableName="supplier_company_tax_info">
+        </table>
+        <table tableName="supplier_info_component">
+        </table>
+        <table tableName="tenant_account">
+        </table>
+        <table tableName="tenant_basic_info">
+        </table>
+        <table tableName="tenant_purchaser_info_component_setting">
+        </table>
+        <table tableName="tenant_supplier_info_component_setting">
         </table>
     </context>
 </generatorConfiguration>

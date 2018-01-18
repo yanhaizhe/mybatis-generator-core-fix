@@ -53,13 +53,15 @@ public class BaseRecordGenerator extends AbstractJavaGenerator {
         FullyQualifiedJavaType fullyQualifiedJavaTypeNotEmpty = new FullyQualifiedJavaType("org.hibernate.validator.constraints.NotEmpty");
         FullyQualifiedJavaType fullyQualifiedJavaTypeColumn = new FullyQualifiedJavaType("javax.persistence.Column");
         FullyQualifiedJavaType fullyQualifiedJavaTypeId = new FullyQualifiedJavaType("javax.persistence.Id");
-//        FullyQualifiedJavaType fullyQualifiedJavaTypeLombok = new FullyQualifiedJavaType("lombok.Data");
+        FullyQualifiedJavaType fullyQualifiedJavaTypeAPIModel = new FullyQualifiedJavaType("io.swagger.annotations.ApiModel");
+        FullyQualifiedJavaType fullyQualifiedJavaTypeApiModelProperty = new FullyQualifiedJavaType("io.swagger.annotations.ApiModelProperty");
         topLevelClass.addImportedType(fullyQualifiedJavaTypeNotEmpty);
         topLevelClass.addImportedType(fullyQualifiedJavaTypeTable);
         topLevelClass.addImportedType(fullyQualifiedJavaTypeColumn);
         topLevelClass.addImportedType(fullyQualifiedJavaTypeId);
         topLevelClass.addImportedType(fullyQualifiedJavaTypeId);
-//        topLevelClass.addImportedType(fullyQualifiedJavaTypeLombok);
+        topLevelClass.addImportedType(fullyQualifiedJavaTypeAPIModel);
+        topLevelClass.addImportedType(fullyQualifiedJavaTypeApiModelProperty);
 
         topLevelClass.setVisibility(JavaVisibility.PUBLIC);
         commentGenerator.addJavaFileComment(topLevelClass);
