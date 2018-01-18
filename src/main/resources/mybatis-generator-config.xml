@@ -21,9 +21,9 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/myclouder_upms?useUnicode=true&amp;characterEncoding=utf-8"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/asgard?useUnicode=true&amp;characterEncoding=utf-8"
                         userId="root"
-                        password="yanhz123">
+                        password="anwhere">
         </jdbcConnection>
 
 
@@ -32,23 +32,23 @@
         </javaTypeResolver>
 
         <!-- model class config -->
-        <javaModelGenerator targetPackage="com.myclouder.upms.dal.model"
-                            targetProject="myclouder-upms/myclouder-upms-rpc-dal/src/main/java">
+        <javaModelGenerator targetPackage="com.zoo.swaggerext.zooswaggerext.model"
+                            targetProject="zoo-swaggerwxt/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="mybatis.mapping"
-                         targetProject="myclouder-upms/myclouder-upms-rpc-dal/src/main/resources">
+        <sqlMapGenerator targetPackage="mapping"
+                         targetProject="zoo-swaggerwxt/src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.myclouder.upms.dal.mapper"
-                             targetProject="myclouder-upms/myclouder-upms-rpc-dal/src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.zoo.swaggerext.zooswaggerext.mapper"
+                             targetProject="zoo-swaggerwxt/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="upms_log">
+        <table tableName="supplier_basic_info">
             <!--<generatedKey column="id" sqlStatement="mysql" identity="true"/>-->
         </table>
     </context>
