@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <classPathEntry location="D:/develops/repo/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar"/>
+    <classPathEntry location="/Users/yanhaizhe/.m2/repository/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar"/>
 
     <context id="config" targetRuntime="MyBatis3">
         <!--<commentGenerator>
@@ -23,7 +23,7 @@
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://127.0.0.1:3306/asgard?useUnicode=true&amp;characterEncoding=utf-8"
                         userId="root"
-                        password="anwhere">
+                        password="anywhere">
         </jdbcConnection>
 
 
@@ -33,18 +33,18 @@
 
         <!-- model class config -->
         <javaModelGenerator targetPackage="com.zoo.swaggerext.zooswaggerext.model"
-                            targetProject="zoo-swaggerwxt/src/main/java">
+                            targetProject="zoo-swaggerext/src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="mapping"
-                         targetProject="zoo-swaggerwxt/src/main/resources">
+                         targetProject="zoo-swaggerext/src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.zoo.swaggerext.zooswaggerext.mapper"
-                             targetProject="zoo-swaggerwxt/src/main/java">
+                             targetProject="zoo-swaggerext/src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
