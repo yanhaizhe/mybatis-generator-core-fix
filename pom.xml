@@ -140,6 +140,11 @@
       <artifactId>hsqldb</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.terminus.asgard</groupId>
+      <artifactId>asgard-service-common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
 </project>

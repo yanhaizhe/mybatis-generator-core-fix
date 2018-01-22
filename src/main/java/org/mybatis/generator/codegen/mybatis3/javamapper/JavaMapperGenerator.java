@@ -64,7 +64,7 @@ public class JavaMapperGenerator extends AbstractJavaClientGenerator {
         interfaze.addSuperInterface(new FullyQualifiedJavaType("MyMapper" + "<" + entityType.getShortName() + ">"));
         //导入通用mapper的jar包
 //        interfaze.addImportedType(new FullyQualifiedJavaType("tk.mybatis.mapper.common.Mapper"));
-        interfaze.addImportedType(new FullyQualifiedJavaType("io.terminus.asgard.asgardservice.util.MyMapper"));
+        interfaze.addImportedType(new FullyQualifiedJavaType("io.terminus.asgard.asgardservicecommon.util.MyMapper"));
         //导入生成model
         interfaze.addImportedType(entityType);
 

@@ -50,7 +50,14 @@
 
 
 
+        <table tableName="asgard_dictionary">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="asgard_tag_setting">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
         <table tableName="purchaser_account">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
             <!--<generatedKey column="id" sqlStatement="mysql" identity="true"/>-->
             <!--<ignoreColumn column="created_by"></ignoreColumn>-->
             <!--<ignoreColumn column="last_updated_by"></ignoreColumn>-->
@@ -60,49 +67,90 @@
             <!--<ignoreColumn column="options"></ignoreColumn>-->
             <!--<ignoreColumn column="is_deleted"></ignoreColumn>-->
         </table>
-        <table tableName="purchaser_basic_info">
+        <table tableName="purchaser_basic">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
-        <table tableName="purchaser_company_info">
+        <table tableName="purchaser_blacklist">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
-        <table tableName="purchaser_company_tax_info">
+        <table tableName="purchaser_company">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="purchaser_company_tax">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="purchaser_custom_tag">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="purchaser_follow_info_component">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_info_component">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
-        <table tableName="purchaser_interested_info_component">
+        <table tableName="purchaser_invitation_code">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_rate_template">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_rate_template_module">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_supplier_basic_info">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_supplier_investigate_result">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_supplier_rate_template_result">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_supplier_tag">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
-        <table tableName="purchaser_tag_setting">
+        <table tableName="saas_component_config">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
+
         <table tableName="supplier_account">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="supplier_bank_info">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="supplier_bank_info_history">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="supplier_basic_info">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="supplier_basic_info_history">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="supplier_company_info">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="supplier_company_info_history">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="supplier_company_tax_info">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="supplier_company_tax_info_history">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="supplier_info_component">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
+        </table>
+        <table tableName="supplier_info_component_history">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="tenant_account">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="tenant_basic_info">
-        </table>
-        <table tableName="tenant_purchaser_info_component_setting">
-        </table>
-        <table tableName="tenant_supplier_info_component_setting">
+            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
     </context>
 </generatorConfiguration>
