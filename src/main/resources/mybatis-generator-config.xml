@@ -53,9 +53,9 @@
         <table tableName="asgard_dictionary">
             <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
-        <table tableName="asgard_tag_setting">
-            <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
-        </table>
+        <!--<table tableName="asgard_tag_setting">-->
+            <!--<property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />-->
+        <!--</table>-->
         <table tableName="purchaser_account">
             <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
             <!--<generatedKey column="id" sqlStatement="mysql" identity="true"/>-->
@@ -70,7 +70,7 @@
         <table tableName="purchaser_basic">
             <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
-        <table tableName="purchaser_blacklist">
+        <table tableName="purchaser_black">
             <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_company">
@@ -79,7 +79,7 @@
         <table tableName="purchaser_company_tax">
             <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
-        <table tableName="purchaser_custom_tag">
+        <table tableName="tag">
             <property name="rootClass" value="io.terminus.asgard.asgardcommon.model.BaseModel" />
         </table>
         <table tableName="purchaser_follow_info_component">
